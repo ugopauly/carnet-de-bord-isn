@@ -1,0 +1,13 @@
+.background-projet{
+    background: rgb(131,58,180);
+    background: linear-gradient(0deg, rgba(131,58,180,0.6) 0%, rgba(253,29,29,0.5) 42%, rgba(252,176,69,0.9) 100%);
+}
+
+.image{
+    opacity: 0.4;
+    margin-top: 1em;
+}
+
+.image:hover{
+    opacity: 1;
+}

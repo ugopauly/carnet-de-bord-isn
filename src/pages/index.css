@@ -1,0 +1,28 @@
+/* .background-index::after{
+    content: "";
+    background: url(/images/background-index.jpg);
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-repeat: no-repeat;
+} */
+
+.background-index{
+    background: rgb(78,9,121);
+    background: linear-gradient(0deg, rgba(78,9,121,0.5) 35%, rgba(0,212,255,0.9) 100%);
+}
+
+.Image{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.Jumbotron{
+    background-image: url(/images/vieuxop.png);
+    background-size: cover;
+}
