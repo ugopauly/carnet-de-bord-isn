@@ -8,3 +8,8 @@
 .nav-link{
     padding-left: 0;
 }
+
+.navbar-brand{
+    padding-top: 0.2rem !important;
+    padding-bottom: 0rem !important;
+}

@@ -10,7 +10,7 @@ const Footer = () => (
             <Col className="marg" md="6">
               <h5 class="lead" className="title">Carnet De Bord</h5>
               <p>
-                Site web réalisé pour le projet de fin d'année d'ISN de Terminale.
+                Site web réalisé pour le projet de fin d'année d'ISN de Terminale
               </p>
             </Col>
             <Col className="marg" md="6">
@@ -31,7 +31,7 @@ const Footer = () => (
         </Container>
         <div className="footer-copyright text-center py-3">
         <Container fluid class="lead">
-          &copy; {new Date().getFullYear()} Copyright: <a href="mailto:ugo.pauly31@gmail.com" target="blank" >Ugo P.</a>
+          &copy; {new Date().getFullYear()} Copyright | <a href="mailto:ugo.pauly31@gmail.com" target="blank" >Ugo P.</a>
         </Container>
       </div>
     </footer>

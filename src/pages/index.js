@@ -55,7 +55,7 @@ const IndexPage = () => (
       <Alert variant="success" id="accordion">
         <Alert.Heading>Avertissement</Alert.Heading>
         <p>
-          Ci-dessous répertorié mon évolution <Badge variant="dark">Personnelle</Badge> ainsi que l'évolution du <Badge variant="primary">Projet</Badge>.
+          Ci-dessous répertorié mon évolution <Badge variant="dark">Personnelle</Badge> ainsi que l'évolution du <Badge variant="primary">Projet</Badge>
         </p>
         <hr />
         <p className="mb-0">
@@ -125,9 +125,7 @@ const IndexPage = () => (
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="3">
             <Card.Body>
-              <span role="img" aria-label="emoj"> ✏️ </span>Création de <strong>la page d'Accueil</strong> (index) et de <strong>la page de la Radio</strong>
-              <br/>
-              <br/><span role="img" aria-label="emoj"> 🛑 </span>On arrête de travailler avec <code>codesandbox.io</code> pour travailler localement et se partager le projet sur <code>GitHub</code>
+              <span role="img" aria-label="emoj"> 🛑 </span>On arrête de travailler avec <code>codesandbox.io</code> pour travailler localement et se partager le projet sur <code>GitHub</code>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -147,7 +145,7 @@ const IndexPage = () => (
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="5">
             <Card.Body>
-              On perfectionne <span role="img" aria-label="emoj"> 📻 </span><strong>la page de la Radio</strong> en y ajoutant un lien pour pouvoir streamer <span role="img" aria-label="emoj"> ⏺️ </span><strong>la Radio Clin D'Oeil FM</strong>
+            <span role="img" aria-label="emoj"> ✏️ </span>Création de <strong>la page d'Accueil</strong> (index) et de <strong>la page de la Radio</strong>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -170,11 +168,14 @@ const IndexPage = () => (
         </Card>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="7">
-            2 avril <Badge variant="primary">Projet</Badge>
+            30 mars <Badge variant="primary">Projet</Badge>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="7">
             <Card.Body>
-              <strong>Le site web de l'Alma est presque fini.</strong> On estime qu'il est à 75% d'être achevé.
+              On perfectionne <span role="img" aria-label="emoj"> 📻 </span><strong>la page de la Radio</strong> en y ajoutant un lien pour pouvoir streamer <span role="img" aria-label="emoj"> ⏺️ </span><strong>la Radio Clin D'Oeil FM</strong>
+              <br/>
+              <br/>
+              <strong>Le site web de l'Alma est presque fini.</strong> On estime qu'il est à 75% d'être achevé
               <br/>
               <br/><span role="img" aria-label="emoj"> 🚧 </span>Il manque surtout d'ajouter <strong>une plateforme administrative en back-end</strong> avec <kbd>Strapi</kbd> et <span role="img" aria-label="emoj"> 🚀 </span>régler quelques bugs UI de compatibilité avec les mobiles
             </Card.Body>
@@ -193,17 +194,61 @@ const IndexPage = () => (
             </Card.Body>
           </Accordion.Collapse>
         </Card>
-        {/* <Card>
+        <Card>
           <Accordion.Toggle as={Card.Header} eventKey="9">
-            16 mars <Badge variant="dark">Personnelle</Badge>
+            27 avril <Badge variant="primary">Projet</Badge>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="9">
             <Card.Body>
-              Chez moi. <span role="img" aria-label="emoj"> 🛣️ </span>Prise en main de Visual Studio Code. Avant je codais avec Sublime Text mais
-              je trouve que Visual Studio Code est plus adapté pour coder avec <kbd>React.js</kbd>
+              <strong><span role="img" aria-label="emoj"> 📱 </span>Compatibilité mobile:</strong>
+              <br/>
+              <br/>
+              Je met en place le système <code>Grid</code> de <kbd>Bootstrap</kbd> pour avoir des élements <code>Responsive</code> (qui s'adaptent à la taille de l'écran de l'utilisateur) notamment sur le site de la Radio
+              <br/>
+              <span role="img" aria-label="emoj"> 🐞 </span><strong>Bug</strong> avec la <code>navBar</code> <kbd>Bootstrap</kbd> on cherche des solutions. Finalement, Alexandre trouve la solution : une <code>navBar</code> s'ouvrant vers le haut
+              <br/>
+              <br/>
+              <strong><span role="img" aria-label="emoj"> 🔑 </span>Interface administrateur:</strong>
+              <br/>
+              <br/>
+              Ecriture de la documentation | Ajout de nouvelles pages
             </Card.Body>
           </Accordion.Collapse>
-        </Card> */}
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="10">
+            1er mai <Badge variant="dark">Personnelle</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="10">
+            <Card.Body>
+              Avec mes nouvelles connaissances en <kbd>Bootstrap</kbd> je commence un projet personnel où je crée un site dynamique<span role="img" aria-label="emoj"> 🚧 </span>
+              <br/>Je suis confronté à un problème: le site utilise deux versions de <kbd>Bootstrap</kbd> (une version dépassée <code>v3.0.3</code> et une plus récente <code>v4.3.1</code>) 
+              <br/>Je cherche donc dans les fichiers <kbd>.CSS</kbd> et <kbd>.JS</kbd> <kbd>Bootstrap</kbd> ce qui m'interesse pour créer une <code>stylesheet</code> hybridifiée
+              <br/>
+              <br/>Etant donné que le site de l'Alma possède les mêmes feuilles de styles <kbd>Bootstrap</kbd> je suis à present capable de gérer ces <span role="img" aria-label="emoj"> 🐞 </span><strong>bugs</strong> d'incompatibilité  
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="11">
+            2 mai <Badge variant="primary">Projet</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="11">
+            <Card.Body>
+              Je fais la page <strong>Partenaires</strong> de la Radio<span role="img" aria-label="emoj"> 🔊 </span> mais également la page <strong>Equipe</strong> avant de m'attaquer à la page <strong>Photos/Vidéos</strong>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="12">
+            4 mai <Badge variant="success">Groupe</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="12">
+            <Card.Body>
+              <span role="img" aria-label="emoj"> ⚖️ </span>Vidéo-conférence avec M. Grava pour lui parler de l'avancement du projet
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
       </Accordion>
       <br/>
       <Spinner animation="border" />
