@@ -53,7 +53,7 @@ const SecondPage = () => (
           <Form.Check type="checkbox" label="J'ai lu et j'accepte la politique de confidentialité" />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Envoyer !
         </Button>
       </Form>
     </Layout>

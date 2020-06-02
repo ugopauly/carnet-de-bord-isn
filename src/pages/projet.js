@@ -21,7 +21,7 @@ const SecondPage = () => (
       <Row>
         <Col>
           <Card>
-            <Card.Img className="image" variant="top" src="/images/cin.png" />
+            <Card.Img className="image" variant="top" src="images/cin.png" />
             <Card.Body>
               <Card.Text>
                 La page du Cinéma de l'Alma
@@ -31,7 +31,7 @@ const SecondPage = () => (
         </Col>
         <Col>
           <Card>
-            <Card.Img className="image" variant="top" src="/images/rad.png" />
+            <Card.Img className="image" variant="top" src="images/rad.png" />
             <Card.Body>
               <Card.Text>
                 La page de la Radio Clin d'Oeil
@@ -48,12 +48,12 @@ const SecondPage = () => (
       <hr/>
       <br/>
       <h1 class="display-5">| Gatsby |</h1>
-      <Image className="Image" src="/images/gatsbylogo.png" width="50" height="50" class="d-inline-block align-top" />
+      <Image className="Image" src="images/gatsbylogo.png" width="50" height="50" class="d-inline-block align-top" />
       <br/>
       <p class="lead">On allait donc refaire ce site web mais en utilisant <kbd>Gatsby.js</kbd></p>
       <div style={{marginRight: `3.5em`, marginLeft: `3.5em` }}>
         <Card>
-          <a href="https://www.gatsbyjs.org/" target="blank" ><Card.Img src="/images/gatsb.png" variant="top" rounded /></a>
+          <a href="https://www.gatsbyjs.org/" target="blank" ><Card.Img src="images/gatsb.png" variant="top" rounded /></a>
           <Card.Body>
             <Card.Text>
               <kbd>Gatsby</kbd> est un générateur de site statique
@@ -68,14 +68,14 @@ const SecondPage = () => (
       <h1 class="display-5">| React |</h1>
       <h1><span role="img" aria-label="emoj"> ⚛️ </span></h1>
       <br/>
-      <p class="lead"><kbd>Gatsby</kbd> est basé sur du <kbd>React.js</kbd>, une bibliothèque Javascript conçue par <strong>Facebook</strong></p>
+      <p class="lead"><kbd>Gatsby</kbd> est basé sur du <kbd>React.js</kbd> : une bibliothèque Javascript conçue par <strong>Facebook</strong></p>
       <Card>
-        <a href="https://fr.reactjs.org/" target="blank" ><Card.Img src="/images/react.png" rounded/></a> 
+        <a href="https://fr.reactjs.org/" target="blank" ><Card.Img src="images/react.png" rounded/></a> 
       </Card>
       <br/>
       <div style={{marginRight: `3.5em`, marginLeft: `3.5em` }}>
         <Card>
-          <Card.Img variant="top" src="/images/tete.png" />
+          <Card.Img variant="top" src="images/tete.png" />
           <Card.Body>
             <Card.Text>
               La page que vous êtes en train de lire en ce moment utilise la technologie <kbd>React.js</kbd>
@@ -89,7 +89,7 @@ const SecondPage = () => (
       <Row>
         <Col style={{marginTop:`1.5em`}}>
           <Card>
-            <Card.Img src="/images/compo.png" variant="" rounded />
+            <Card.Img src="images/compo.png" variant="" rounded />
             <Card.Body>
               <Card.Text>
                 Les <code>src/pages</code> sont créées à partir de <code>src/components</code> 
@@ -99,7 +99,7 @@ const SecondPage = () => (
         </Col>
         <Col md={7} style={{marginTop:`1.5em`}}>
           <Card>
-            <Card.Img src="/images/import.png" variant="" rounded />
+            <Card.Img src="images/import.png" variant="" rounded />
             <Card.Body>
               <Card.Text>
                 Ici la <code>src/pages/projet.js</code> est créée à partir de <code>src/components/layout</code> 
@@ -118,7 +118,7 @@ const SecondPage = () => (
       <hr/>
       <br/>
       <h1 class="display-5">| Bootstrap |</h1>
-      <Image className="Image" src="/images/bootlogo.png" width="70" height="70" class="d-inline-block align-top" />
+      <Image className="Image" src="images/bootlogo.png" width="70" height="70" class="d-inline-block align-top" />
       <br/>
       <h4 class="font-weight-normal">Bootstrap est une bibliothèque HTML, CSS et Javascript</h4>
       <br/>
@@ -126,7 +126,7 @@ const SecondPage = () => (
       <Row>
         <Col md={3} xs={5} style={{marginTop:`1.5em`}}>
           <Card>
-          <a href="https://getbootstrap.com/docs/4.0/components/card/" target="blank" ><Card.Img src="/images/botcomp.png" variant="" rounded /></a>
+          <a href="https://getbootstrap.com/docs/4.0/components/card/" target="blank" ><Card.Img src="images/botcomp.png" variant="" rounded /></a>
           </Card>
         </Col>
         <Col md={9} xs={7} style={{marginTop:`1.5em`}}>
@@ -139,7 +139,7 @@ const SecondPage = () => (
           </Card>
           <br/>
           <Card>
-            <Card.Img src="/images/card.png" variant="" rounded />
+            <Card.Img src="images/card.png" variant="" rounded />
             <Card.Body>
               <Card.Text>
                 Juste ici, j'ai utilisé des objets <kbd>Bootstrap</kbd> c'est à dire <code>Row</code> et <code>Col</code> pour créer un systeme de grille

@@ -4,7 +4,7 @@ import "./index.css"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Spinner, Button, Accordion, Card, Jumbotron, Alert, Badge } from 'react-bootstrap';
+import { Button, Accordion, Card, Jumbotron, Alert, Badge } from 'react-bootstrap';
 import Particles from 'react-particles-js';
 
 const particleOpt = {
@@ -52,14 +52,14 @@ const IndexPage = () => (
       <h1><span role="img" aria-label="emoj"> 🚧 💡 ✏️ 🚀 🚧 </span></h1>
       <br/>
 
-      <Alert variant="success" id="accordion">
+      <Alert variant="warning" id="accordion">
         <Alert.Heading>Avertissement</Alert.Heading>
         <p>
           Ci-dessous répertorié mon évolution <Badge variant="dark">Personnelle</Badge> ainsi que l'évolution du <Badge variant="primary">Projet</Badge>
         </p>
         <hr />
         <p className="mb-0">
-          Ce repertoire est mis à jour regulièrement.
+          Ce répertoire n'est plus mit à jour. Le projet est fini.
         </p>
       </Alert>
       <br/>
@@ -81,8 +81,8 @@ const IndexPage = () => (
               <br/>
               <ul class="list-group">
                 <li class="list-group-item">Une <strong>page d’accueil</strong> (index) qui permet de se diriger soit vers <strong>le site du Cinéma de l’Alma</strong> soit vers <strong>le site de la Radio Clin d’Oeil FM</strong></li>
-                <li class="list-group-item"><span role="img" aria-label="emoj"> ✅ </span>Plusieurs pages pour <strong>le Cinéma de l'Alma</strong></li>
-                <li class="list-group-item"><span role="img" aria-label="emoj"> ✅ </span>Plusieurs pages pour <strong>la Radio Clin d'Oeil FM</strong></li>
+                <li class="list-group-item"><span role="img" aria-label="emoj"> ✔ </span>Plusieurs pages pour <strong>le Cinéma de l'Alma</strong></li>
+                <li class="list-group-item"><span role="img" aria-label="emoj"> ✔ </span>Plusieurs pages pour <strong>la Radio Clin d'Oeil FM</strong></li>
               </ul>
               <br/>
               <i>Nota Bene: </i> En plus de la <strong>page d’accueil</strong> (index) qui nous permet de naviguer entre ces deux sites, il est décidé de mettre <strong>une barre de navigation commune</strong> sur toutes les pages des deux sites (<strong>Cinéma</strong> et <strong>Radio</strong>) qui permet de basculer rapidement de l’une à l’autre.
@@ -235,7 +235,7 @@ const IndexPage = () => (
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="11">
             <Card.Body>
-              Je fais la page <strong>Partenaires</strong> de la Radio<span role="img" aria-label="emoj"> 🔊 </span> mais également la page <strong>Equipe</strong> avant de m'attaquer à la page <strong>Photos/Vidéos</strong>
+              Je fais la page <strong>Partenaires</strong> de la Radio<span role="img" aria-label="emoj"> 🔊 </span> mais également la page <strong>Equipe</strong> avant de m'attaquer à la page <strong>Gallerie</strong>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -249,9 +249,60 @@ const IndexPage = () => (
             </Card.Body>
           </Accordion.Collapse>
         </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="13">
+            9 mai <Badge variant="primary">Projet</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="13">
+            <Card.Body>
+              Je crée les pages <strong>Confidentialité</strong> et <strong>TOS</strong><span role="img" aria-label="emoj"> 📜 </span> 
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="14">
+            16 mai <Badge variant="primary">Projet</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="14">
+            <Card.Body>
+              Je crée la page <strong>Lieu</strong><span role="img" aria-label="emoj"> 🗺️ </span> et j'y ajoute un <code>embed</code> de <strong>OpenStreetMap</strong>
+              , que j'ajoute également sur la page <strong>Accueil</strong> (de la radio)
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="15">
+            17 mai <Badge variant="dark">Personnelle</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="15">
+            <Card.Body>
+              <span role="img" aria-label="emoj"> ✔ </span> Je met a votre disposition <strong>le reposit</strong> <kbd>GitHub</kbd> sur le <a href="#footer">Footer</a> (juste en dessous)
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="16">
+            20 mai <Badge variant="primary">Projet</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="16">
+            <Card.Body>
+              Je résous une partie des liens erronés <span role="img" aria-label="emoj"> 🔗 </span> dû au <code>crawling</code>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="17">
+            29 mai <Badge variant="success">Groupe</Badge>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="17">
+            <Card.Body>
+            C'est fini. <span role="img" aria-label="emoj"> 📅 </span> On rend le projet final <span role="img" aria-label="emoj"> 🔚 </span>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
       </Accordion>
       <br/>
-      <Spinner animation="border" />
+      <h1 class="lead" style={{fontSize:`3rem`}}><span role="img" aria-label="emoj"> 🚧 </span>Projet Terminé !<span role="img" aria-label="emoj"> 🚧 </span></h1>
     </Layout>
   </div> 
 )

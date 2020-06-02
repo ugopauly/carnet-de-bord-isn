@@ -8,12 +8,12 @@ const Footer = () => (
         <Container className="bg" fluid variant="light">
           <Row>
             <Col className="marg" md="6">
-              <h5 class="lead" className="title">Carnet De Bord</h5>
+              <h5 class="lead" className="title">Carnet de Bord</h5>
               <p>
                 Site web réalisé pour le projet de fin d'année d'ISN de Terminale
               </p>
             </Col>
-            <Col className="marg" md="6">
+            <Col className="marg" md="6" id="footer">
               <h5 class="lead" className="title">Pages</h5>
               <ul class="list-group list-group-horizontal">
                 <li className="list-unstyled">
@@ -24,6 +24,9 @@ const Footer = () => (
                 </li>
                 <li className="list-unstyled">
                   <Link to="contact" className="nav-link" >Contact</Link>
+                </li>
+                <li className="list-unstyled">
+                  <a href="https://github.com/ugopauly/carnet-de-bord-isn" target="blank" className="nav-link" >GitHub</a>
                 </li>
               </ul>
             </Col>
@@ -36,6 +39,7 @@ const Footer = () => (
       </div>
     </footer>
 )
+
 
 export default Footer
 
